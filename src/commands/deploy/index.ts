@@ -47,6 +47,6 @@ export default class DeployIndex extends Command {
 
     const upResult = await stack.up()
 
-    chewy.utils.log.info(`${upResult.outputs}`)
+    chewy.utils.log.info(`${JSON.stringify(upResult.outputs)}`)
   }
 }
